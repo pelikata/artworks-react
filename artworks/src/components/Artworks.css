@@ -1,0 +1,20 @@
+.columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 80px
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.page h1 {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 60%;
+    
+}
