@@ -1,7 +1,14 @@
+.artwork div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .artwork img {
     width: 300px;
     transition: transform .4s;
+    
 }
 
 .artwork img:hover {
@@ -14,6 +21,10 @@
 h2 {
     margin-bottom: 30px;
     margin-top: 50px;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
+
+
+
+

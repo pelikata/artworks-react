@@ -8,6 +8,7 @@ import About from "./components/About";
 import LoadingMask from "./components/LoadingMask";
 import NavBar from "./components/Navbar";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -38,6 +39,7 @@ function App() {
         <Route path="/image/:id" element={<Image />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

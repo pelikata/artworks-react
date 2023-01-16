@@ -1,10 +1,16 @@
 .navBar {
-    padding: 20px 150px 20px 50px;
+    padding: 20px 0px 20px 50px;
     display: flex;
-    align-items: center;
+    align-items:  center; 
     justify-content: space-between;
     background-color: white;
 }
+
+.navBar nav {
+    text-align: right;
+}
+
+
 
 .navBar li {
     margin-left: 30px;
@@ -19,6 +25,10 @@
     font-size: 18px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1000px) {
     .navBar {
         padding-right: 50px;
@@ -26,7 +36,12 @@
 }
 
 @media screen and (max-width: 800px) {
-    .navBar {
-        padding-right: 10px;
+    .navBar li {
+        visibility: hidden;
+    }
+
+    .hidden {
+        visibility: visible;
+    
     }
 }

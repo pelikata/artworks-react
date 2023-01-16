@@ -38,3 +38,21 @@
         margin-left: -40px;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 90%;
+    } 
+
+    img{
+        width: 90%;
+    }
+
+    .text h2 {
+        margin-left: 0;
+    }
+}

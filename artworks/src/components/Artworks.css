@@ -16,5 +16,21 @@
     margin-bottom: 100px;
     margin-top: 50px;
     width: 60%;
+    text-align: center;
     
+}
+
+@media screen and (max-width: 1000px) {
+    .page h1 {
+        
+        width: 80%;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .columns {  
+        grid-template-columns: auto;
+        
+    }
 }

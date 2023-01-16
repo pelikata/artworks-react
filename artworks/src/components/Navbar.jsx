@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./NavBar.css"
 import Logo from "../img/logo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function NavBar() {
   return (
@@ -12,6 +14,7 @@ function NavBar() {
         <li><Link to="/about">About us</Link></li>
         <li><Link to="/collection">Collection</Link></li>
         </nav>
+        <FontAwesomeIcon icon={faBars} size="2x" className="hidden" />
     </div>
   )
 }

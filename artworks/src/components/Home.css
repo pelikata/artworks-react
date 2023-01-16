@@ -79,3 +79,34 @@ margin-bottom:  -20px;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .heading {
+        display: block;
+    }
+
+    .heading div {
+        padding: 40px;
+    }
+
+    .home h1 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .textbox {
+        display: block;
+    }
+
+    .textbox div {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .column{
+        border-bottom: 1px solid black;
+        border-right: none;
+        padding-bottom: 20px;
+    }
+
+}
+
