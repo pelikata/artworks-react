@@ -1,0 +1,81 @@
+.home {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../img/museumhall.jpg);
+    position: relative;
+    
+}
+
+.textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+    background-color: white;
+    width: 80%;
+    padding: 40px;
+    
+    
+}
+
+
+
+
+.home h1{
+margin-top: 60px;
+padding-left: 40px;
+background-color: white;
+padding-bottom: 80px;
+margin-bottom:  -20px;
+}
+
+.textbox div {
+    width: 40%;
+}
+
+.column{
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.heading {
+    
+    padding-right: 70px;
+    cursor: pointer;
+    
+
+}
+
+.heading a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.heading div img {
+    width: 30px;
+    display: inline;
+    top: 57px;
+    margin-left: 5px;
+    
+}
+
+.heading div p {
+    display: inline;
+}   
+
+@media screen and (max-width: 1200px) {
+    .heading {
+    
+        padding-right: 40px;
+    }
+}
+

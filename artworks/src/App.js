@@ -4,9 +4,14 @@ import Artworks from "./components/Artworks";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Image from "./components/Image";
+import About from "./components/About";
+import LoadingMask from "./components/LoadingMask";
+import NavBar from "./components/Navbar";
+import Home from "./components/Home";
 
 function App() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchArt = () => {
     fetch(
@@ -16,15 +21,22 @@ function App() {
       .then((data) => {
         console.log(data);
         setData(data.records);
+        setLoading(false);
       });
   };
   useEffect(() => fetchArt(), []);
 
   return (
     <BrowserRouter>
+      <NavBar></NavBar>
       <Routes>
-        <Route path="/" element={<Artworks data={data} />} />
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/collection"
+          element={loading ? <LoadingMask /> : <Artworks data={data} />}
+        />
         <Route path="/image/:id" element={<Image />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
